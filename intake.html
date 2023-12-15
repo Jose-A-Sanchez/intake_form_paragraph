@@ -27,9 +27,10 @@
 
     <main>
         <h1 class="subheading">Welcome to the Intake Form Paragraph Generator!</h1>
-        <p class="into-p">Use this tool to auto-complete the Intake-Form process and make your life easier!</p>
+        <p class="intro-p">Use this tool to auto-complete the Intake-Form process and make your life easier!</p>
 
         <section class="q1">
+            <h2>- What type of device is this?</h2>
             <label for="device-type">Choose a Device Type</label>
             <select name="device" id="device">
                 <option value="iPhone">iPhone</option>
@@ -42,6 +43,7 @@
         </section>
 
         <section class="q2">
+            <h2>- What is the issue with this device?</h2>
             <label for="issue-type">Choose an Issue Type</label>
             <select name="issue" id="issue">
                 <option value="broken-screen">Broken Screen</option>
@@ -56,14 +58,44 @@
         </section>
 
         <section class="q3">
-            <label for="device-type">Choose a Device Type</label>
-            <select name="device" id="device">
-                <option value="iPhone">iPhone</option>
-                <option value="iPad">iPad</option>
-                <option value="Andriod-Phone">Andriod Phone</option>
-                <option value="Andriod-Tablet">Andriod Tablet</option>
-                <option value="Smart-Watch">Smart Watch</option>
-                <option value="Game Console">Game Console</option>
+            <h2>- What is the condition of the back glass/back case?</h2>
+            <label for="backglass.case">Back Glass/Back Case Condition</label>
+            <select name="backglass" id="backglass">
+                <option value="Good">Good</option>
+                <option value="Scratched">Scratched</option>
+                <option value="Cracked">Cracked</option>
+                <option value="Shattered">Shattered</option>
+                <option value="Dented">Dented</option>
+            </select>
+        </section>
+
+        <section class="q4">
+            <h2>- Has the device been exposed to moisture or liquid?</h2>
+            <label for="moisture.liquid">Moisture / Liquid</label>
+            <select name="water" id="water">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </section>
+
+        <section class="q5">
+            <h2>- Is the Face-ID / Touch-ID functioning normally on this device?</h2>
+            <label for="faceid.touchid">Face-ID / Touch-ID</label>
+            <select name="faceid" id="faceid">
+                <option value="Yes">Yes, normal function</option>
+                <option value="No">No, malfunction</option>
+            </select>
+        </section>
+
+        <section class="q6">
+            <h2>- What is the condition of the back glass/back case?</h2>
+            <label for="backglass.case">Back Glass/Back Case Condition</label>
+            <select name="backglass" id="backglass">
+                <option value="Good">Good</option>
+                <option value="Scratched">Scratched</option>
+                <option value="Cracked">Cracked</option>
+                <option value="Shattered">Shattered</option>
+                <option value="Dented">Dented</option>
             </select>
         </section>
 
