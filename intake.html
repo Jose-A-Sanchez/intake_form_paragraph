@@ -9,27 +9,27 @@
 </head>
 <body>
     <header id="header">
-        <img class ="logo" src="photos/mobile revive favicon.png" alt="Mobile Revive Logo">
-        <div>
-            <h1 class="heading">Mobile Revive</h1> 
-        </div>
-    </header>
-    <nav class="nav-bar">
+        <nav class="nav-bar">
             <div class="navbar-container">
                 <ul class="menu-items">
                     <li><a href="Home">Home</a></li>
-                    <li><a href="Home">Home</a></li>
+                    <li><a href="https://mobilerevive.repairshopr.com/" target="_blank">RepairShpr.com</a></li>
                     <li><a href="Home">Home</a></li>
                     <li><a href="Home">Home</a></li>
                 </ul>
             </div>
         </nav>
+        <a href="https://mobilerevive.com/" target="_blank">
+        <img class ="logo" src="photos/mobile revive logo dark _ google.png" alt="Mobile Revive Logo" title="Click this Photo to visit the MR-Website">
+        </a>
+    </header>
+    
 
-    <main>
+    <main class="main">
         <h1 class="subheading">Welcome to the Intake Form Paragraph Generator!</h1>
         <p class="intro-p">Use this tool to auto-complete the Intake-Form process and make your life easier!</p>
 
-        <section class="q1">
+        <div class="q1">
             <h2>- What type of device is this?</h2>
             <label for="device-type">Choose a Device Type</label>
             <select name="device" id="device">
@@ -40,9 +40,11 @@
                 <option value="Smart-Watch">Smart Watch</option>
                 <option value="Game Console">Game Console</option>
             </select>
-        </section>
+        </div>
 
-        <section class="q2">
+        <div class="space1" ></div>
+
+        <section class="q2">    
             <h2>- What is the issue with this device?</h2>
             <label for="issue-type">Choose an Issue Type</label>
             <select name="issue" id="issue">
@@ -57,6 +59,8 @@
             </select>
         </section>
 
+        <div class="space1" ></div>
+
         <section class="q3">
             <h2>- What is the condition of the back glass/back case?</h2>
             <label for="backglass.case">Back Glass/Back Case Condition</label>
@@ -69,6 +73,8 @@
             </select>
         </section>
 
+        <div class="space1" ></div>
+
         <section class="q4">
             <h2>- Has the device been exposed to moisture or liquid?</h2>
             <label for="moisture.liquid">Moisture / Liquid</label>
@@ -77,6 +83,8 @@
                 <option value="No">No</option>
             </select>
         </section>
+
+        <div class="space1" ></div>
 
         <section class="q5">
             <h2>- Is the Face-ID / Touch-ID functioning normally on this device?</h2>
@@ -87,16 +95,21 @@
             </select>
         </section>
 
+        <div class="space1" ></div>
+
         <section class="q6">
-            <h2>- What is the condition of the back glass/back case?</h2>
-            <label for="backglass.case">Back Glass/Back Case Condition</label>
-            <select name="backglass" id="backglass">
-                <option value="Good">Good</option>
-                <option value="Scratched">Scratched</option>
-                <option value="Cracked">Cracked</option>
-                <option value="Shattered">Shattered</option>
-                <option value="Dented">Dented</option>
+            <h2>- Add Any Additional Comments.</h2>
+            <label for="comment">Additional Comments</label>
+            <br>
+
+            <textarea id="commentbox" name="commentbox" rows="4" cols="40">Enter comments here...</textarea>
             </select>
+        </section>
+
+        <div class="space1" ></div>
+
+        <section class="text-box">
+            <h2>Your finished Paragraph:</h2>
         </section>
 
     </main>
