@@ -99,9 +99,13 @@ main {
     padding-bottom: 5rem;
 }
 
+.space1 {
+    padding:2rem;
+}
+
 .q1 {
     display: block;
-    padding: 2.5rem;
+    padding: 2rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -112,12 +116,8 @@ main {
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0,.2);
 }
 
-.space1 {
-    padding:2rem;
-}
-
 .q2 {
-    padding: 2.5rem;
+    padding: 2rem;
     text-align: center;
     background-color: white;
     height: 150px;
@@ -127,9 +127,8 @@ main {
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0,.2);
 }
 
-
 .q3 {
-    padding: 2.5rem;
+    padding: 2rem;
     text-align: center;
     background-color: white;
     height: 150px;
@@ -140,7 +139,7 @@ main {
 }
 
 .q4 {
-    padding: 2.5rem;
+    padding: 2rem;
     text-align: center;
     background-color: white;
     height: 150px;
@@ -151,7 +150,7 @@ main {
 }
 
 .q5 {
-    padding: 2.5rem;
+    padding: 2rem;
     text-align: center;
     background-color: white;
     height: 150px;
@@ -162,7 +161,7 @@ main {
 }
 
 .q6 {
-    padding: 2.5rem;
+    padding: 2rem;
     text-align: center;
     background-color: white;
     height: 200px;
@@ -171,6 +170,7 @@ main {
     border-radius: 20px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0,.2);
 }
+
 
 .text-box {
     padding: 2rem;
