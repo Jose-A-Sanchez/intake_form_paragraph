@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intake Form Paragraph Generator</title>
     <link rel="stylesheet" href="intake.css">
-    <script></script>
+    <script src="intake.js"></script>
 </head>
 <body>
     <header id="header">
         <nav class="nav-bar">
             <div class="navbar-container">
                 <ul class="menu-items">
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="https://mobilerevive.repairshopr.com/" target="_blank">RepairShpr.com</a></li>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="Home">Home</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="https://mobilerevive.repairshopr.com/" target="_blank">RepairShopr</a></li>
+                    <li><a href="https://www.mobilesentrix.com/">Mobile Sentrix</a></li>
+                    <li><a href="Home">Other</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,12 +33,12 @@
             <h2>- What type of device is this?</h2>
             <label for="device-type">Choose a Device Type</label>
             <select name="device" id="device">
-                <option value="iPhone">iPhone</option>
-                <option value="iPad">iPad</option>
-                <option value="Andriod-Phone">Andriod Phone</option>
-                <option value="Andriod-Tablet">Andriod Tablet</option>
-                <option value="Smart-Watch">Smart Watch</option>
-                <option value="Game Console">Game Console</option>
+                <option value="an iPhone">iPhone</option>
+                <option value="an iPad">iPad</option>
+                <option value="an Andriod Phone">Andriod Phone</option>
+                <option value="an Andriod Tablet">Andriod Tablet</option>
+                <option value="a Smart Watch">Smart Watch</option>
+                <option value="a Game Console">Game Console</option>
             </select>
         </div>
 
@@ -48,14 +48,14 @@
             <h2>- What is the issue with this device?</h2>
             <label for="issue-type">Choose an Issue Type</label>
             <select name="issue" id="issue">
-                <option value="broken-screen">Broken Screen</option>
-                <option value="broken-screen-lcd">Broken Screen and LCD Damage</option>
-                <option value="battery">Battery Issues</option>
-                <option value="charge-port">Charge-Port Issues</option>
-                <option value="camera">Camera/Camera Glass</option>
-                <option value="data-R">Data Recovery</option>
-                <option value="data-T">Data Transfer</option>
-                <option value="other">Other/Unknown(Full-Diagnostic)</option>
+                <option value="has a broken screen">Broken Screen</option>
+                <option value="has a broken screen & lcd damage">Broken Screen and LCD Damage</option>
+                <option value="has battery issues">Battery Issues</option>
+                <option value="has charge port issues">Charge-Port Issues</option>
+                <option value="has camera / camera glass issues">Camera/Camera Glass</option>
+                <option value="needs data recovery">Data Recovery</option>
+                <option value="needs data transfered">Data Transfer</option>
+                <option value="needs a full diagnostic / has unknown issues">Other/Unknown(Full-Diagnostic)</option>
             </select>
         </section>
 
@@ -65,11 +65,11 @@
             <h2>- What is the condition of the back glass/back case?</h2>
             <label for="backglass.case">Back Glass/Back Case Condition</label>
             <select name="backglass" id="backglass">
-                <option value="Good">Good</option>
-                <option value="Scratched">Scratched</option>
-                <option value="Cracked">Cracked</option>
-                <option value="Shattered">Shattered</option>
-                <option value="Dented">Dented</option>
+                <option value="good">Good</option>
+                <option value="scratched">Scratched</option>
+                <option value="cracked">Cracked</option>
+                <option value="shattered">Shattered</option>
+                <option value="dented">Dented</option>
             </select>
         </section>
 
@@ -79,8 +79,8 @@
             <h2>- Has the device been exposed to moisture or liquid?</h2>
             <label for="moisture.liquid">Moisture / Liquid</label>
             <select name="water" id="water">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
+                <option value="has been exposed to moisture / liquid">Yes</option>
+                <option value="has not been exposed to moisture / liquid">No</option>
             </select>
         </section>
 
@@ -90,8 +90,8 @@
             <h2>- Is the Face-ID / Touch-ID functioning normally on this device?</h2>
             <label for="faceid.touchid">Face-ID / Touch-ID</label>
             <select name="faceid" id="faceid">
-                <option value="Yes">Yes, normal function</option>
-                <option value="No">No, malfunction</option>
+                <option value="Face-ID/Touch-ID is functioning normally">Yes, normal function</option>
+                <option value="Face-ID/Touch-ID is not functioning normally">No, malfunction</option>
             </select>
         </section>
 
@@ -102,17 +102,27 @@
             <label for="comment">Additional Comments</label>
             <br>
 
-            <textarea id="commentbox" name="commentbox" rows="4" cols="40">Enter comments here...</textarea>
+            <textarea id="commentbox" name="commentbox" rows="4" cols="40"></textarea>
             </select>
         </section>
 
         <div class="space1" ></div>
 
+        <button id="generate-btn">Generate Paragraph</button>
+
+        <div class="space1" ></div>
+
         <section class="text-box">
-            <h2>Your finished Paragraph:</h2>
+            <h2 class="finalp">Your finished Paragraph:</h2>
+            <pre id="output-paragraph"></pre>
         </section>
 
+        <div class="space1" ></div>
+
     </main>
+    <footer>
+        <p>This </p>
+    </footer>
     
 </body>
 </html>
