@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intake Form Paragraph Generator</title>
+    <link rel="shortcut icon" type="image/jpg" href="photos/mobile revive favicon.png"/>
     <link rel="stylesheet" href="intake.css">
     <script src="intake.js"></script>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/678c248fde.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header id="header">
@@ -15,7 +19,7 @@
                     <li><a href="#Home">Home</a></li>
                     <li><a href="https://mobilerevive.repairshopr.com/" target="_blank">RepairShopr</a></li>
                     <li><a href="https://www.mobilesentrix.com/">Mobile Sentrix</a></li>
-                    <li><a href="Home">Other</a></li>
+                    <li><a href="https://sickw.com/">SickW</a></li>
                 </ul>
             </div>
         </nav>
@@ -30,76 +34,86 @@
         <p class="intro-p">Use this tool to auto-complete the Intake-Form process and make your life easier!</p>
 
         <div class="q1">
-            <h2>- What type of device is this?</h2>
-            <label for="device-type">Choose a Device Type</label>
-            <select name="device" id="device">
-                <option value="an iPhone">iPhone</option>
-                <option value="an iPad">iPad</option>
-                <option value="an Andriod Phone">Andriod Phone</option>
-                <option value="an Andriod Tablet">Andriod Tablet</option>
-                <option value="a Smart Watch">Smart Watch</option>
-                <option value="a Game Console">Game Console</option>
-            </select>
+            <h2 class="boxh2">- What type of device is this?</h2>
+            <!-- <label for="device-type">Choose a Device Type</label> -->
+            <div class="custom-select">
+                <select name="device" id="device">
+                    <option value="an iPhone">iPhone</option>
+                    <option value="an iPad">iPad</option>
+                    <option value="an Andriod Phone">Andriod Phone</option>
+                    <option value="an Andriod Tablet">Andriod Tablet</option>
+                    <option value="a Smart Watch">Smart Watch</option>
+                    <option value="a Game Console">Game Console</option>
+                </select>
+            </div>
         </div>
 
-        <div class="space1" ></div>
+        <div class="space1" ><i class="fa-solid fa-arrow-down fa-2x"></i></div>
 
         <section class="q2">    
-            <h2>- What is the issue with this device?</h2>
-            <label for="issue-type">Choose an Issue Type</label>
-            <select name="issue" id="issue">
-                <option value="has a broken screen">Broken Screen</option>
-                <option value="has a broken screen & lcd damage">Broken Screen and LCD Damage</option>
-                <option value="has battery issues">Battery Issues</option>
-                <option value="has charge port issues">Charge-Port Issues</option>
-                <option value="has camera / camera glass issues">Camera/Camera Glass</option>
-                <option value="needs data recovery">Data Recovery</option>
-                <option value="needs data transfered">Data Transfer</option>
-                <option value="needs a full diagnostic / has unknown issues">Other/Unknown(Full-Diagnostic)</option>
-            </select>
+            <h2 class="boxh2">- What is the issue with this device?</h2>
+            <!-- <label for="issue-type">Choose an Issue Type</label> -->
+            <div class="custom-select">
+                <select name="issue" id="issue">
+                    <option value="has a broken screen">Broken Screen</option>
+                    <option value="has a broken screen & lcd damage">Broken Screen and LCD Damage</option>
+                    <option value="has battery issues">Battery Issues</option>
+                    <option value="has charge port issues">Charge-Port Issues</option>
+                    <option value="has camera / camera glass issues">Camera/Camera Glass</option>
+                    <option value="needs data recovery">Data Recovery</option>
+                    <option value="needs data transfered">Data Transfer</option>
+                    <option value="needs a full diagnostic / has unknown issues">Other/Unknown(Full-Diagnostic)</option>
+                </select>
+            </div>
         </section>
 
-        <div class="space1" ></div>
+        <div class="space1" ><i class="fa-solid fa-arrow-down fa-2x"></i></div>
 
         <section class="q3">
-            <h2>- What is the condition of the back glass/back case?</h2>
-            <label for="backglass.case">Back Glass/Back Case Condition</label>
-            <select name="backglass" id="backglass">
-                <option value="good">Good</option>
-                <option value="scratched">Scratched</option>
-                <option value="cracked">Cracked</option>
-                <option value="shattered">Shattered</option>
-                <option value="dented">Dented</option>
-            </select>
+            <h2 class="boxh2">- What is the condition of the back glass/back case?</h2>
+            <!-- <label for="backglass.case">Back Glass/Back Case Condition</label> -->
+            <div class="custom-select">
+                <select name="backglass" id="backglass">
+                    <option value="good">Good</option>
+                    <option value="scratched">Scratched</option>
+                    <option value="cracked">Cracked</option>
+                    <option value="shattered">Shattered</option>
+                    <option value="dented">Dented</option>
+                </select>
+            </div>    
         </section>
 
-        <div class="space1" ></div>
+        <div class="space1" ><i class="fa-solid fa-arrow-down fa-2x"></i></div>
 
         <section class="q4">
-            <h2>- Has the device been exposed to moisture or liquid?</h2>
-            <label for="moisture.liquid">Moisture / Liquid</label>
-            <select name="water" id="water">
-                <option value="has been exposed to moisture / liquid">Yes</option>
-                <option value="has not been exposed to moisture / liquid">No</option>
-            </select>
+            <h2 class="boxh2">- Has the device been exposed to moisture or liquid?</h2>
+            <!-- <label for="moisture.liquid">Moisture / Liquid</label> -->
+            <div class="custom-select">
+                <select name="water" id="water">
+                    <option value="has been exposed to moisture / liquid">Yes</option>
+                    <option value="has not been exposed to moisture / liquid">No</option>
+                </select>
+            </div>
         </section>
 
-        <div class="space1" ></div>
+        <div class="space1" ><i class="fa-solid fa-arrow-down fa-2x"></i></div>
 
         <section class="q5">
-            <h2>- Is the Face-ID / Touch-ID functioning normally on this device?</h2>
-            <label for="faceid.touchid">Face-ID / Touch-ID</label>
-            <select name="faceid" id="faceid">
-                <option value="Face-ID/Touch-ID is functioning normally">Yes, normal function</option>
-                <option value="Face-ID/Touch-ID is not functioning normally">No, malfunction</option>
-            </select>
+            <h2 class="boxh2">- Is the Face-ID / Touch-ID functioning normally on this device?</h2>
+            <!-- <label for="faceid.touchid">Face-ID / Touch-ID</label> -->
+            <div class="custom-select">
+                <select name="faceid" id="faceid">
+                    <option value="Face-ID/Touch-ID is functioning normally">Yes, normal function</option>
+                    <option value="Face-ID/Touch-ID is not functioning normally">No, malfunction</option>
+                </select>
+            </div>    
         </section>
 
-        <div class="space1" ></div>
+        <div class="space1" ><i class="fa-solid fa-arrow-down fa-2x"></i></div>
 
         <section class="q6">
             <h2>- Add Any Additional Comments.</h2>
-            <label for="comment">Additional Comments</label>
+            <!-- <label for="comment">Additional Comments</label> -->
             <br>
 
             <textarea id="commentbox" name="commentbox" rows="4" cols="40"></textarea>
@@ -108,21 +122,32 @@
 
         <div class="space1" ></div>
 
-        <button id="generate-btn">Generate Paragraph</button>
+        <button id="generate-btn"><span>Generate Paragraph</span></button>
 
         <div class="space1" ></div>
 
         <section class="text-box">
             <h2 class="finalp">Your finished Paragraph:</h2>
             <pre id="output-paragraph"></pre>
+            <button id="copy-btn" onclick="copyToClipboard()">Copy Text</button>
         </section>
 
         <div class="space1" ></div>
 
     </main>
     <footer>
-        <p>This </p>
-    </footer>
-    
+        <img class="logo2" src="photos/mobile revive logo white.png" alt="Mobile Revive White">
+        <h1 class="footer1">Thank you for using the Intake Form Generator!</h1>
+        <h2 class="footer2">Here's a list of useful websites in case you need them:</h2>
+
+        <div class="space1" ></div>
+        <div>
+            <ul class="footer-items">
+                <li><a href="https://mobilerevive.repairshopr.com/" target="_blank">RepairShopr</a></li>
+                <li><a href="https://www.mobilesentrix.com/" target="_blank">Mobile Sentrix</a></li>
+                <li><a href="https://www.microsoft.com/en-us/microsoft-teams/log-in" target="_blank">Teams</a></li>
+                <li><a href="https://sickw.com/" target="_blank">SickW</a></li>
+            </ul>
+        </div>
 </body>
 </html>

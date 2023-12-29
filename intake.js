@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
       backglassCondition +
       "." +
       "\n";
-    paragraph += "The customer states that the device " + hasWaterDamage + "\n";
-    paragraph += "The customer states that the " + isFaceIDWorking + "\n";
+    paragraph += "The customer states that the device " + hasWaterDamage + "." + "\n";
+    paragraph += "The customer states that the " + isFaceIDWorking + "." + "\n";
     paragraph += "Additional Comments: " + additionalComments;
 
     // Display the paragraph in the text-box section
@@ -31,3 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("generate-btn")
     .addEventListener("click", generateParagraph);
 });
+
+function copyToClipboard() {
+  var textToCopy = document.getElementById("output-paragraph").innerText;
+
+  // Create a temporary textarea to copy the text
+  var tempTextArea = document.createElement("textarea");
+  tempTextArea.value = textToCopy;
+  document.body.appendChild(tempTextArea);
+
+  // Select and copy the text
+  tempTextArea.select();
+  document.execCommand("copy");
+
+  // Remove the temporary textarea
+  document.body.removeChild(tempTextArea);
+
+  // Notify the user that the text has been copied
+  alert("Text copied to clipboard!");
+}

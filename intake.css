@@ -93,7 +93,17 @@ main {
 }
 
 .space1 {
-  padding: 2rem;
+  padding: 3rem;
+}
+
+.space1 i {
+  position: absolute;
+  right: 50%;
+  color: black;
+}
+
+.boxh2 {
+  padding-bottom: 2rem;
 }
 
 .q1 {
@@ -103,7 +113,7 @@ main {
   margin-right: auto;
   text-align: center;
   background-color: white;
-  height: 150px;
+  height: 250px;
   width: 500px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
@@ -113,7 +123,7 @@ main {
   padding: 2rem;
   text-align: center;
   background-color: white;
-  height: 150px;
+  height: 250px;
   width: 500px;
   margin: auto;
   border-radius: 20px;
@@ -124,7 +134,7 @@ main {
   padding: 2rem;
   text-align: center;
   background-color: white;
-  height: 150px;
+  height: 250px;
   width: 500px;
   margin: auto;
   border-radius: 20px;
@@ -135,7 +145,7 @@ main {
   padding: 2rem;
   text-align: center;
   background-color: white;
-  height: 150px;
+  height: 250px;
   width: 500px;
   margin: auto;
   border-radius: 20px;
@@ -146,7 +156,7 @@ main {
   padding: 2rem;
   text-align: center;
   background-color: white;
-  height: 150px;
+  height: 250px;
   width: 500px;
   margin: auto;
   border-radius: 20px;
@@ -157,16 +167,57 @@ main {
   padding: 2rem;
   text-align: center;
   background-color: white;
-  height: 200px;
+  height: 250px;
   width: 500px;
   margin: auto;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
+/* //Generate Button// */
+#generate-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#generate-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#generate-btn:hover span {
+  padding-right: 25px;
+}
+
+#generate-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 #generate-btn {
   display: block;
   margin: auto;
+  background-color: rgb(33, 37, 40);
+  color: white;
+  font-size: 2.0rem;
+  border-style: none;
+  border-radius: 12px;
+  width: 400px;
+  height: 100px;
+  cursor: pointer;
+
+}
+
+#generate-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: red;
+  color: whitesmoke;
 }
 
 .text-box {
@@ -187,7 +238,67 @@ main {
   line-height: 1.5;
   color: black;
   white-space: normal;
+  border-width:3px;
+  border-style:solid;
+  border-color:black;
 }
+
+#copy-btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* //Dropdown Menu Stlyes// */
+.custom-select {
+  min-width: 350px;
+  position: relative;
+  
+}
+
+select {
+  appearance: none;
+  /*  safari  */
+  -webkit-appearance: none;
+  /*  other styles for aesthetics */
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.custom-select::before,
+.custom-select::after {
+  --size: 0.3rem;
+  content: "";
+  position: absolute;
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 40%;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 55%;
+}
+
+/* footer styles */
 
 footer {
   padding: 2rem;
@@ -195,4 +306,39 @@ footer {
   margin: auto;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
   background-color: rgb(33, 37, 40);
+}
+
+.logo2 {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  max-width: 20%;
+  max-height: 20%;
+  padding: 2rem;
+}
+
+.footer1 {
+  color: whitesmoke;
+}
+
+.footer2 {
+  color: whitesmoke;
+}
+
+.footer-items {
+  display: flex;
+  margin: auto;
+}
+
+.footer-items li {
+  list-style: none;
+  padding: 0rem;
+  margin: auto;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
 }
